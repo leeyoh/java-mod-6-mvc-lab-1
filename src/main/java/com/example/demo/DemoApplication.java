@@ -36,45 +36,33 @@ public class DemoApplication {
 		}
 		@Override
 		public void run(String... args) {
-			//Creates the default activities
-			Activity archery = new Activity();
-			archery.setDifficulty(2);
-			archery.setName("Archery");
-			archery.setCreated_at(new Date());
-
-			Activity swimming = new Activity();
-			swimming.setDifficulty(3);
-			swimming.setName("Swimming");
-			swimming.setCreated_at(new Date());
-
-			activityRepository.save(archery);
-			activityRepository.save(swimming);
-
-			//Creates Default Campers
-			Camper joe = new Camper();
-			joe.setAge(10);
-			joe.setName("Joe");
-			joe.setUpdated_at(new Date());
-
-			Camper thomas = new Camper();
-			thomas.setAge(18);
-			thomas.setName("Thomas");
-			thomas.setUpdated_at(new Date());
-
-			camperRepository.save(joe);
-			camperRepository.save(thomas);
-
-			//Create Signup
-//			Signup act1 = new Signup();
-//			act1.getCampersSet().add(joe);
-//			act1.getActivitiesSet().add(archery);
-//			act1.setTime(10);
-//			archery.setSignup(act1);
-//			joe.setSignup(act1);
-
+//			//Creates the default activities
+//			Activity archery = new Activity();
+//			archery.setDifficulty(2);
+//			archery.setName("Archery");
+//			archery.setCreated_at(new Date());
+//
+//			Activity swimming = new Activity();
+//			swimming.setDifficulty(3);
+//			swimming.setName("Swimming");
+//			swimming.setCreated_at(new Date());
+//
 //			activityRepository.save(archery);
+//			activityRepository.save(swimming);
+//
+//			//Creates Default Campers
+//			Camper joe = new Camper();
+//			joe.setAge(10);
+//			joe.setName("Joe");
+//			joe.setUpdated_at(new Date());
+//
+//			Camper thomas = new Camper();
+//			thomas.setAge(18);
+//			thomas.setName("Thomas");
+//			thomas.setUpdated_at(new Date());
+//
 //			camperRepository.save(joe);
-	//		signupRepository.save(act1);
+//			camperRepository.save(thomas);
 		}
 	}
 
